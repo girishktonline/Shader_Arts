@@ -32,7 +32,7 @@ void mainImage(out vec4 fragColor, in vec2 fragCoord) {
     heat *= 1.0 + beat * 1.2;
 
     vec3 sunColor = mix(vec3(1.0, 0.5, 0.0), vec3(1.0, 1.0, 0.5), heat);
-    vec3 glow = vec3(1.0) * (1.0 - sphere); // white background glow
+    vec3 glow = vec3(1.0) * (1.0 - sphere);
 
     vec3 finalColor = mix(glow, sunColor, sphere);
 
